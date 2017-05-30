@@ -1,0 +1,286 @@
+.universeContainer {
+    width: 100%;
+    max-width: 1280px;
+    position: relative;
+}
+
+.universeContainer .row {
+    margin-bottom: 0;
+}
+
+.universeContainer .universeHeader {
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 320px;
+    position: relative;
+}
+
+.universeContainer .universeHeader p {
+    position: absolute;
+    top: 80px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 12px #000;
+}
+
+.universeContainer .universeHeader span {
+    position: absolute;
+    top: 150px;
+    color: #fff;
+    width: 60%;
+    font-weight: 400;
+    margin: 0 20%;
+    line-height: 1.6em;
+    font-size: 16px;
+    text-align: center;
+    text-shadow: 0px 0px 12px #000;
+}
+
+.universeContainer .universeAnchor {
+    position: absolute;
+    top: 290px;
+    width: 100%;
+    max-width: 1280px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.universeContainer .universeAnchors {
+    display: inline-block;
+    background: #FE8005;
+    color: #fff;
+    padding: 20px 18px 18px 18px;
+    font-size: 14px;
+}
+
+.universeContainer .universeAnchors:hover {
+    background: #e66100;
+    cursor: pointer;
+} 
+
+.universeContainer .universeMainAnchor {
+    width: 250px;
+    border-radius: 4px;
+}
+
+.universeContainer .universeAnchors:nth-last-of-type(2) {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.universeContainer .universeAnchors:first-of-type {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.universeContainer .universeAnchors img {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0 0 10px;
+}
+
+.universeContainer .subFamilyContainer:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.universeContainer .subFamilyContainer {
+    border: 10px solid #f1f1f1;
+    /* max-width: 230px; */
+    /* width: 100%; */
+    /* display: inline-block; */
+    margin: 0 0 19px 0;
+    /* position: relative; */
+}
+
+.universeContainer .subFamilyContainer legend {
+    width: 80%;
+    font-weight: 700;
+    padding: 0 10px;
+    height: 63px;
+}
+
+.universeContainer .subFamilyContainer legend div {
+    color: #000;
+    text-align: center;
+    line-height: 1.2em;
+    height: 60px;
+    align-items: center;
+    display: grid;
+}
+
+.universeContainer .subFamilyImage {
+    margin: 0 20px 20px 20px;
+    height: 190px;
+    overflow: hidden;
+}
+
+.universeContainer .subFamilyImage div {
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+
+.universeContainer .subFamilyImage div:hover {
+    transform: scale(1.2);
+    transition: all 1s;
+}
+
+.universeContainer .subFamilyImage:hover div:before, .universeContainer .subFamilyImage:focus div:before {
+    display: block;}
+
+.universeContainer .subFamilyImage div:before {
+    content: "";
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+}
+    
+.universeContainer h2 {
+    color: #646665;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    line-height: 1.3em;
+    position: relative;
+}
+
+.universeContainer p {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px 0;
+    line-height: 1.6em;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.universeContainer .pinterest {
+    box-shadow: 3px 4px 15px #eaeaea;
+    border: 1px solid #eee;
+    padding: 20px;
+    position: relative;
+    max-width: 272px;
+    margin-bottom: 20px;
+}
+
+.universeContainer .pinterestImage1 {
+    width: 66%;
+    height: 142px;
+    float: left;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.universeContainer .pinterestImage2, .universeContainer .pinterestImage3 {
+    width: 33%;
+    height: 70px;
+    float: right;
+    margin: 0 0 2px 2px;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.universeContainer .pinterestImage3 {
+    margin: 0 0 0 2px;
+}
+
+.universeContainer .subUniverse {
+    padding: 60px 40px;
+    background: url(../images/degrade.jpg) top center repeat-x #f6f7f7;
+}
+
+.universeContainer .subUniverse>div>p {
+    clear: both;
+}
+
+.universeContainer .pinterestTitle div {
+    align-items: center;
+    display: flex;
+    height: 50px;
+}
+
+.universeContainer .pinterestTitle span {
+    background: #efefef;
+    padding: 12px 17px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.universeContainer .pinterestTitle {
+    font-size: 14px;
+    line-height: 1.1em;
+    padding-top: 10px;
+    clear: both;
+}
+
+.universeContainer .subUniverseMobTitle {
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 1.1em;
+    padding: 30px 35px 30px 0;
+}
+
+.universeContainer .subUniverseMobActive::after {
+    content: "-";
+    font-weight: 100;
+    font-size: 40px;
+    position: absolute;
+    right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.universeContainer .subUniverseMobDisable::after {
+    content: "+";
+    font-weight: 100;
+    font-size: 40px;
+    position: absolute;
+    right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.divider {
+    height: 1px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+}
+
+@media screen and (min-width: 768px) {
+  .universeContainer .subUniverseFamilies {
+     display: block !important; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .universeContainer .subUniverseFamilies {
+     display: none; 
+  }
+  .universeContainer .subUniverse {
+     padding: 0 10px;
+  }
+  .universeContainer .subFamilyContainer {
+     max-width: 230px;
+     margin: 0 auto 19px auto;
+  }
+  .universeContainer .universeHeader span {
+     width: 80%;
+     margin: 0 10%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .universeContainer .subUniverse .col.s6 {
+     width: 100%;
+  }
+}

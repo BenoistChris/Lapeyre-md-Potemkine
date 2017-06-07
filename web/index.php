@@ -27,7 +27,7 @@ foreach ($file as $i=>$row) {
     $catalog[$row['universeUrlname']]['subuniverses'][$row['subuniverseUrlname']]=$row;
 }
 
-$file = array_map("str_getcsv", file("https://docs.google.com/spreadsheets/d/1s10qJviUHayRFRHxSbMGNDKaIg7-gyYAjz6kOPhPm6g/pub?output=csv",FILE_SKIP_EMPTY_LINES));
+$file = array_map("str_getcsv", file("https://docs.google.com/spreadsheets/d/1s10qJviUHayRFRHxSbMGNDKaIg7-gyYAjz6kOPhPm6g/pub?gid=1183165030&single=true&output=csv",FILE_SKIP_EMPTY_LINES));
 $keys = array_shift($file);
 foreach ($file as $i=>$row) {
     $row = array_combine($keys, $row);

@@ -120,17 +120,22 @@
     overflow: hidden;
 }
 
+.universeContainer .subFamilyImageTiny {
+    height: 130px;
+}
+
 .universeContainer .subFamilyImage div {
-    background-repeat: no-repeat !important;
-    background-position: center center !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
     width: 100%;
     height: 100%;
     transition: all .5s;
 }
 
 .universeContainer .subFamilyImage div:hover {
-    transform: scale(1.2);
-    transition: all 1s;
+    transform: scale(1.1);
+    transition: all 1.5s;
 }
 
 .universeContainer .subFamilyImage:hover div:before, .universeContainer .subFamilyImage:focus div:before {
@@ -143,7 +148,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.2);
 }
     
 .universeContainer h2 {
@@ -164,62 +169,12 @@
     margin-bottom: 40px;
 }
 
-.universeContainer .pinterest {
-    box-shadow: 3px 4px 15px #eaeaea;
-    border: 1px solid #eee;
-    padding: 20px;
-    position: relative;
-    max-width: 272px;
-    margin-bottom: 20px;
-}
-
-.universeContainer .pinterestImage1 {
-    width: 66%;
-    height: 142px;
-    float: left;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-}
-
-.universeContainer .pinterestImage2, .universeContainer .pinterestImage3 {
-    width: 33%;
-    height: 70px;
-    float: right;
-    margin: 0 0 2px 2px;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-}
-
-.universeContainer .pinterestImage3 {
-    margin: 0 0 0 2px;
-}
-
 .universeContainer .subUniverse {
-    padding: 60px 40px;
-    background: url(../images/degrade.jpg) top center repeat-x #f6f7f7;
+    padding: 30px 40px 60px 40px;
+    background: url(https://www.lapeyre.fr/img/contrib/freehtml/pages/v8/univers/images/degrade.jpg) top center repeat-x #f6f7f7;
 }
 
 .universeContainer .subUniverse>div>p {
-    clear: both;
-}
-
-.universeContainer .pinterestTitle div {
-    align-items: center;
-    display: flex;
-    height: 50px;
-}
-
-.universeContainer .pinterestTitle span {
-    background: #efefef;
-    padding: 12px 17px;
-    font-size: 13px;
-    cursor: pointer;
-}
-
-.universeContainer .pinterestTitle {
-    font-size: 14px;
-    line-height: 1.1em;
-    padding-top: 10px;
     clear: both;
 }
 
@@ -256,6 +211,16 @@
     background-color: #e0e0e0;
 }
 
+.capitalize {
+    text-transform: capitalize;
+}
+
+#subUnivers > div {
+    width: 100vw;
+    left: calc(-50vw + 50%);
+    position: relative;
+}
+
 @media screen and (min-width: 768px) {
   .universeContainer .subUniverseFamilies {
      display: block !important; 
@@ -284,3 +249,45 @@
      width: 100%;
   }
 }
+
+/* Widget Pinterest Début */
+
+#widgetPinterest {
+   padding: 0;
+   text-align: center;
+}
+
+#widgetPinterest > span[class*="_board"] {
+    padding: 5px;
+}
+
+#widgetPinterest span {
+   overflow-x: hidden;
+   overflow-y: hidden;
+}
+
+#widgetPinterest > span {
+    box-shadow: 0 0 10px #e2e2e2;
+    border-radius: 2px;
+}
+
+#widgetPinterest span[class*="_img"] {
+    box-shadow: none;
+}
+
+#widgetPinterest span[class*="_bd"] {
+    height: inherit !important;
+    padding-bottom: 6px;
+}
+
+#widgetPinterest span[class*="_img"]:nth-child(n+3), #widgetPinterest span[class*="_ft"], #widgetPinterest span[class*="_pinner"]{
+    display:none;
+}
+
+#widgetPinterest span span span[class*="_board"] {
+    height: 24px;
+    color: #666;
+    width: 70%;
+}
+
+/* Widget Pinterest Fin */
